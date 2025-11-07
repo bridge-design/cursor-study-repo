@@ -49,16 +49,40 @@ interface StyleRule extends CSSRule {
   export const getColors = (colorRange: string): ColorVariables => {
     const colorsArray = getCSSCustomPropIndex()
     const colorVariables: ColorVariables = {}
+    const prefix = `--ds-color-${colorRange}-`
   
     colorsArray.forEach(([varName, colorValue]) => {
-      const strippedName = varName.replace(`--ds-color-${colorRange}-`, '')
-      const [colorType, colorShade] = strippedName.split('-')
-  
-      if (!colorVariables[colorType]) {
-        colorVariables[colorType] = {}
+      // Only process variables that match the colorRange prefix
+      if (!varName.startsWith(prefix)) {
+        return
       }
+
+      const strippedName = varName.replace(prefix, '')
+      const parts = strippedName.split('-')
+      
+      // Handle concept colors (no shade numbers): --ds-color-concept-primary
+      // vs global colors (with shade numbers): --ds-color-global-primary-500
+      if (parts.length === 1) {
+        // Concept color pattern: just the color name
+        const colorName = parts[0]
+        if (colorName) {
+          if (!colorVariables[colorName]) {
+            colorVariables[colorName] = {}
+          }
+          colorVariables[colorName]['default'] = colorValue
+        }
+      } else {
+        // Global color pattern: colorType-shade
+        const colorType = parts[0]
+        const colorShade = parts.slice(1).join('-') // Handle multi-part shades like "1000"
   
-      colorVariables[colorType][colorShade] = colorValue
+        if (colorType && colorShade) {
+          if (!colorVariables[colorType]) {
+            colorVariables[colorType] = {}
+          }
+          colorVariables[colorType][colorShade] = colorValue
+        }
+      }
     })
   
     return colorVariables
