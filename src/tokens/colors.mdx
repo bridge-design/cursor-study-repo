@@ -1,22 +1,6 @@
-import { ColorItem, ColorPalette, Meta } from '@storybook/addon-docs/blocks'
-import { useEffect, useState } from 'react'
-import { getColors } from './getColors.tsx'
+import { Meta } from '@storybook/addon-docs/blocks'
+import { ColorPaletteDisplay } from '../../.storybook/components/color-palette'
 import '../tokens/colors.css'
-
-export const GlobalColors = () => {
-  const [colorVariables, setColorVariables] = useState({})
-  useEffect(() => {
-    const fetchedColors = getColors('global')
-    setColorVariables(fetchedColors)
-  }, [])
-  return (
-    <ColorPalette>
-      {Object.entries(colorVariables).map(([colorType, shades]) => (
-        <ColorItem key={colorType} title={`theme.colors.${colorType}`} colors={shades} />
-      ))}
-    </ColorPalette>
-  )
-}
 
 <Meta title="Tokens/Colors" />
 
@@ -24,4 +8,4 @@ export const GlobalColors = () => {
 
 ## Global Colors
 
-<GlobalColors />
+<ColorPaletteDisplay colorRange="global" />
