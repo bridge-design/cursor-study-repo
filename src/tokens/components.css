@@ -4,4 +4,9 @@
     --ds-button-background-active: var(--ds-color-concept-primary);
     --ds-button-background-disabled: var(--ds-color-concept-neutral);
     --ds-button-outline-focus: var(--ds-color-concept-primary);
+
+    --ds-button-label-color: var(--ds-color-concept-blank);
+    --ds-button-label-fontSize: var(--ds-typography-label-fontSize);
+    --ds-button-label-lineHeight: var(--ds-typography-label-lineHeight);
+    --ds-button-label-fontWeight: var(--ds-typography-label-fontWeight);
 }

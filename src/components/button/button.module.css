@@ -8,10 +8,10 @@
   border-radius: 6px;
   border: 1px solid transparent;
   background-color: var(--ds-button-background);
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
+  color: var(--ds-button-label-color);
+  font-size: var(--ds-button-label-fontSize);
+  font-weight: var(--ds-button-label-fontWeight);
+  line-height: var(--ds-button-label-lineHeight);
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s, color 0.2s;
 }
