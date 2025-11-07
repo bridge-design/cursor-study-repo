@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { getSpaces } from '../../../src/tokens/getSpaces'
+import React, { useEffect, useState } from 'react'
+import { getSpaces } from './getSpaces'
 
 interface SpaceVariables {
   [variant: string]: string

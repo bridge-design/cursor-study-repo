@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { getTypography } from '../../../src/tokens/getTypography'
+import React, { useEffect, useState } from 'react'
+import { getTypography } from './getTypography'
 
 interface TypographyVariables {
   [category: string]: {

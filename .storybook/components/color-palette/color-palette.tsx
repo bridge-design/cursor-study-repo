@@ -1,6 +1,6 @@
 import { ColorItem, ColorPalette } from '@storybook/addon-docs/blocks'
-import { useEffect, useState } from 'react'
-import { getColors } from '../../../src/tokens/getColors'
+import React, { useEffect, useState } from 'react'
+import { getColors } from './getColors'
 
 interface ColorPaletteDisplayProps {
   colorRange: string

@@ -86,4 +86,5 @@ interface StyleRule extends CSSRule {
     })
   
     return colorVariables
-  }  
+  }
+
