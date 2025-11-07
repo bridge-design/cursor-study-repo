@@ -1,0 +1,12 @@
+:root {
+  /* Spacing */
+  --ds-space-global-x0: 0px;
+  --ds-space-global-atom: 1px;
+  --ds-space-global-xhalf: 4px;
+  --ds-space-global-x1: 8px;
+  --ds-space-global-x2: 16px;
+  --ds-space-global-x3: 24px;
+  --ds-space-global-x4: 32px;
+  --ds-space-global-x5: 48px;
+}
+
