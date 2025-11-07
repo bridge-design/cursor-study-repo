@@ -7,7 +7,7 @@
   padding: 8px 16px;
   border-radius: 6px;
   border: 1px solid transparent;
-  background-color: #01949a;
+  background-color: var(--ds-button-background);
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -17,19 +17,20 @@
 }
 
 .button:hover {
-  background-color: #00b4ba;
+  background-color: var(--ds-button-background-hover);
 }
 
 .button:active {
-  background-color: #007b82;
+  background-color: var(--ds-button-background-active);
 }
 
 .button:focus {
-  outline: 2px solid #01949a;
+  outline: 2px solid var(--ds-button-outline-focus);
   outline-offset: 2px;
 }
 
 .button:disabled {
+  background-color: var(--ds-button-background-disabled);
   opacity: 0.5;
   cursor: not-allowed;
 }

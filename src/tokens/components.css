@@ -1,0 +1,7 @@
+:root {
+    --ds-button-background: var(--ds-color-concept-primary);
+    --ds-button-background-hover: var(--ds-color-concept-primary);
+    --ds-button-background-active: var(--ds-color-concept-primary);
+    --ds-button-background-disabled: var(--ds-color-concept-neutral);
+    --ds-button-outline-focus: var(--ds-color-concept-primary);
+}

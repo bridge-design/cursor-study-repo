@@ -52,5 +52,6 @@
   --ds-color-concept-secondary: var(--ds-color-global-accent-500);
   --ds-color-concept-neutral: var(--ds-color-global-neutral-500);
   --ds-color-concept-highlight: var(--ds-color-global-highlight-500);
+  --ds-color-concept-blank: var(--ds-color-global-neutral-1000);
 }
 

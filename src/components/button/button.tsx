@@ -1,5 +1,7 @@
 import React from "react";
 import cm from "./button.module.css";
+import "../../tokens/colors.css";
+import "../../tokens/components.css";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** Polymorphic prop to render the button as a different element */

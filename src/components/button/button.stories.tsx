@@ -89,6 +89,22 @@ export const Reset: Story = {
 }
 
 /**
+ * Disabled button state is used when an action is not available.
+ * Use cases:
+ * - Form validation (disable submit until form is valid)
+ * - Loading states
+ * - Permission-based actions
+ * - Temporarily unavailable features
+ */
+export const Disabled: Story = {
+  args: {
+    ...defaultArgs,
+    disabled: true,
+    children: 'Disabled Button',
+  },
+}
+
+/**
  * Button can be rendered as a different element using the `is` prop.
  * Use cases:
  * - Links styled as buttons
