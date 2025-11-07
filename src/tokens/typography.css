@@ -1,0 +1,17 @@
+:root {
+  /* Font Sizes */
+  --ds-typography-global-fontSize-small: 0.875rem;   /* 14px */
+  --ds-typography-global-fontSize-base: 1rem;        /* 16px */
+  --ds-typography-global-fontSize-large: 1.25rem;    /* 20px */
+  --ds-typography-global-fontSize-xl: 1.5rem;       /* 24px */
+
+  /* Line Heights */
+  --ds-typography-global-lineHeight-tight: 1.25;
+  --ds-typography-global-lineHeight-normal: 1.5;
+  --ds-typography-global-lineHeight-relaxed: 1.75;
+
+  /* Font Weights */
+  --ds-typography-global-fontWeight-normal: 400;
+  --ds-typography-global-fontWeight-bold: 600;
+}
+
