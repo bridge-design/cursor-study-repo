@@ -104,19 +104,3 @@ export const Disabled: Story = {
   },
 }
 
-/**
- * Button can be rendered as a different element using the `is` prop.
- * Use cases:
- * - Links styled as buttons
- * - Custom element rendering
- * - Accessibility improvements
- */
-export const Polymorphic: Story = {
-  args: {
-    ...defaultArgs,
-    is: 'a',
-    href: '#',
-    children: 'Link as Button',
-  },
-}
-

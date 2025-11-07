@@ -16,7 +16,7 @@ export default defineConfig({
     }
   },
   plugins: [react(), dts({
-    rollupTypes: true
+    rollupTypes: false
   })],
   build: {
     lib: {
