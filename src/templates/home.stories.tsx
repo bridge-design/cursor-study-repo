@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Layout } from '@/components';
+import { Header, Layout } from '@/components';
 
 const meta: Meta = {
   title: 'Templates/Home',
@@ -14,7 +14,9 @@ type Story = StoryObj;
 
 const Template = () => (
   <>
+    <Header>Header content</Header>
     <Layout>
+
       Page will be here
     </Layout>
   </>
