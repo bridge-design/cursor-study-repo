@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react'
 import { getColors } from './getColors.tsx'
 import '../tokens/colors.css'
 
-export const AllColors = () => {
+export const GlobalColors = () => {
   const [colorVariables, setColorVariables] = useState({})
   useEffect(() => {
-    const fetchedColors = getColors()
+    const fetchedColors = getColors('global')
     setColorVariables(fetchedColors)
   }, [])
   return (
@@ -22,6 +22,6 @@ export const AllColors = () => {
 
 # Colors
 
-## Theme
+## Global Colors
 
-<AllColors />
+<GlobalColors />

@@ -32,7 +32,7 @@ interface StyleRule extends CSSRule {
                   (propName) =>
                     [propName.trim(), rule.style.getPropertyValue(propName).trim()] as ColorProperty
                 )
-                .filter(([propName]) => propName.indexOf('--btg') === 0)
+                .filter(([propName]) => propName.indexOf('--ds') === 0)
   
               return [...propValArr, ...props]
             }, [])
@@ -46,12 +46,12 @@ interface StyleRule extends CSSRule {
     }
   }
   
-  export const getColors = (): ColorVariables => {
+  export const getColors = (colorRange: string): ColorVariables => {
     const colorsArray = getCSSCustomPropIndex()
     const colorVariables: ColorVariables = {}
   
     colorsArray.forEach(([varName, colorValue]) => {
-      const strippedName = varName.replace('--btg-color-', '')
+      const strippedName = varName.replace(`--ds-color-${colorRange}-`, '')
       const [colorType, colorShade] = strippedName.split('-')
   
       if (!colorVariables[colorType]) {
