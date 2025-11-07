@@ -1,4 +1,6 @@
 :root {
+  /* Tier 1 */
+
   /* Neutral Colors */
   --ds-color-global-neutral-100: #1a1814;
   --ds-color-global-neutral-200: #302c27;
@@ -47,6 +49,7 @@
   --ds-color-global-highlight-900: #3399d1;
   --ds-color-global-highlight-1000: #8bc2e2;
 
+  /* Tier 2 */
   /* Brand Colors */
   --ds-color-concept-primary: var(--ds-color-global-primary-500);
   --ds-color-concept-secondary: var(--ds-color-global-accent-500);

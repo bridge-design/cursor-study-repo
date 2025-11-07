@@ -1,4 +1,5 @@
 :root {
+  /* Tier 1 */
   /* Font Sizes */
   --ds-typography-global-fontSize-small: 0.875rem;   /* 14px */
   --ds-typography-global-fontSize-base: 1rem;        /* 16px */
@@ -14,6 +15,7 @@
   --ds-typography-global-fontWeight-normal: 400;
   --ds-typography-global-fontWeight-bold: 600;
 
+  /* Tier 2 */
   /* Label Typography */
   --ds-typography-label-fontSize: var(--ds-typography-global-fontSize-small);
   --ds-typography-label-lineHeight: var(--ds-typography-global-lineHeight-normal);

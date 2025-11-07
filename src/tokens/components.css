@@ -1,4 +1,5 @@
 :root {
+    /* Tier 3 */
     --ds-button-background: var(--ds-color-concept-primary);
     --ds-button-background-hover: var(--ds-color-concept-primary);
     --ds-button-background-active: var(--ds-color-concept-primary);
