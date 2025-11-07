@@ -1,0 +1,18 @@
+.headerRoot {
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--ds-color-concept-primary),
+    var(--ds-color-concept-highlight)
+  );
+  color: var(--ds-color-concept-neutral);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--ds-space-concept-m);
+  gap: var(--ds-space-concept-m);
+}
