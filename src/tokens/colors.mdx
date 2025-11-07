@@ -1,0 +1,27 @@
+import { ColorItem, ColorPalette, Meta } from '@storybook/addon-docs/blocks'
+import { useEffect, useState } from 'react'
+import { getColors } from './getColors.tsx'
+import '../tokens/colors.css'
+
+export const AllColors = () => {
+  const [colorVariables, setColorVariables] = useState({})
+  useEffect(() => {
+    const fetchedColors = getColors()
+    setColorVariables(fetchedColors)
+  }, [])
+  return (
+    <ColorPalette>
+      {Object.entries(colorVariables).map(([colorType, shades]) => (
+        <ColorItem key={colorType} title={`theme.colors.${colorType}`} colors={shades} />
+      ))}
+    </ColorPalette>
+  )
+}
+
+<Meta title="Tokens/Colors" />
+
+# Colors
+
+## Theme
+
+<AllColors />

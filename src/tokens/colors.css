@@ -1,0 +1,50 @@
+:root {
+  /* Neutral Colors */
+  --btg-color-neutral-100: #1a1814;
+  --btg-color-neutral-200: #302c27;
+  --btg-color-neutral-300: #46413a;
+  --btg-color-neutral-400: #5d564d;
+  --btg-color-neutral-500: #746b60;
+  --btg-color-neutral-600: #8b8174;
+  --btg-color-neutral-700: #a39788;
+  --btg-color-neutral-800: #e5ddc8;
+  --btg-color-neutral-900: #f0eadb;
+  --btg-color-neutral-1000: #faf7ee;
+
+  /* Primary Colors */
+  --btg-color-primary-100: #003436;
+  --btg-color-primary-200: #004b4f;
+  --btg-color-primary-300: #006268;
+  --btg-color-primary-400: #007b82;
+  --btg-color-primary-500: #01949a;
+  --btg-color-primary-600: #009da3;
+  --btg-color-primary-700: #00b4ba;
+  --btg-color-primary-800: #00cdd4;
+  --btg-color-primary-900: #33dde4;
+  --btg-color-primary-1000: #8de4e8;
+
+  /* Accent Colors */
+  --btg-color-accent-100: #3d0614;
+  --btg-color-accent-200: #5c0a1e;
+  --btg-color-accent-300: #7b0e28;
+  --btg-color-accent-400: #9a1232;
+  --btg-color-accent-500: #db1f48;
+  --btg-color-accent-600: #d94163;
+  --btg-color-accent-700: #d9627f;
+  --btg-color-accent-800: #e88299;
+  --btg-color-accent-900: #e9a6b5;
+  --btg-color-accent-1000: #e9ccd4;
+
+  /* Highlight Colors */
+  --btg-color-highlight-100: #001a2a;
+  --btg-color-highlight-200: #002540;
+  --btg-color-highlight-300: #003055;
+  --btg-color-highlight-400: #003b6b;
+  --btg-color-highlight-500: #004369;
+  --btg-color-highlight-600: #005582;
+  --btg-color-highlight-700: #006ca4;
+  --btg-color-highlight-800: #0084c4;
+  --btg-color-highlight-900: #3399d1;
+  --btg-color-highlight-1000: #8bc2e2;
+}
+
