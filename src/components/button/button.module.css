@@ -5,7 +5,7 @@
   position: relative;
   user-select: none;
   padding: var(--ds-space-padding-m) var(--ds-space-padding-l);
-  border-radius: 6px;
+  border-radius: var(--ds-radii-concept-m);
   border: 1px solid transparent;
   background-color: var(--ds-button-background);
   color: var(--ds-button-label-color);
