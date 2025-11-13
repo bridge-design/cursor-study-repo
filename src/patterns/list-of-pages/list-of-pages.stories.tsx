@@ -2,7 +2,18 @@ import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components';
 import { Badge } from '@/components';
-import pagesData from './list-of-pages.data.json';
+// @ts-ignore - JSON import from data directory
+import pagesData from '../../../data/list-of-pages.data.json';
+
+interface Page {
+  id: number;
+  header: string;
+  sectionType: string;
+  status: string;
+  target: number;
+  limit: number;
+  reviewer: string | null;
+}
 
 const meta: Meta = {
   title: 'Patterns/List of Pages',
@@ -49,7 +60,7 @@ export const Default: Story = {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {pagesData.pages.map((page) => (
+          {(pagesData.pages as Page[]).map((page) => (
             <TableRow key={page.id}>
               <TableCell>{page.header}</TableCell>
               <TableCell>{page.sectionType}</TableCell>
