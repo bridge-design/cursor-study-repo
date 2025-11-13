@@ -61,6 +61,7 @@
   --ds-color-concept-blank: var(--ds-color-global-neutral-1000);
   --ds-color-concept-filled: var(--ds-color-global-neutral-100);
   --ds-color-concept-outline: var(--ds-color-global-neutral-200);
+  --ds-color-concept-outline-light: var(--ds-color-global-neutral-800);
 
   --ds-color-concept-success: var(--ds-color-global-success);
 }
