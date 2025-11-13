@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/react'
 import { makeLiveEditStory } from 'storybook-addon-code-editor'
-import * as MyUi from '@/components'
+import * as MyUi from '@/src/components'
 
 interface CreateCodeDemoOptions<T> {
   /** The story to be used in the code demo */

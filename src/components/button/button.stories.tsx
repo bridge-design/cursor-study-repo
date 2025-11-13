@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from 'storybook/test';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/utils/code-demo'
+import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
 
-import { PropsCategory } from '../../../.storybook/constants'
+import { PropsCategory } from '@/.storybook/constants'
 
-import { Button } from '@/components';
+import { Button } from '@/src/components';
 
 
 const meta: Meta<typeof Button> = {

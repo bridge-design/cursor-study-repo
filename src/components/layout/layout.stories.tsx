@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Layout } from '@/components';
+import { Layout } from '@/src/components';
 
 type StyleWithCustomProps = React.CSSProperties & {
   '--layout-max-width'?: string;

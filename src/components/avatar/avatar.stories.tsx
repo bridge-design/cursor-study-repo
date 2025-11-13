@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from 'storybook/test';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/utils/code-demo'
+import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
 
-import { PropsCategory } from '../../../.storybook/constants'
+import { PropsCategory } from '@/.storybook/constants'
 
-import { Avatar } from '@/components';
+import { Avatar } from '@/src/components';
 
 
 const meta: Meta<typeof Avatar> = {

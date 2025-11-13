@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Header, Logo, Avatar } from '@/components';
-import { Menubar, MenubarMenu, MenubarTrigger, MenubarContent, MenubarItem } from '@/components';
+import { Header, Logo, Avatar } from '@/src/components';
+import { Menubar, MenubarMenu, MenubarTrigger, MenubarContent, MenubarItem } from '@/src/components';
 // @ts-ignore - JSON import from data directory
-import menubarData from '../../../data/menubar.data.json';
+import menubarData from '@/data/menubar.data.json';
 
 interface MenuItem {
   id: number;

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/utils/code-demo'
+import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
 
-import { PropsCategory } from '../../../.storybook/constants'
+import { PropsCategory } from '@/.storybook/constants'
 
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components';
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/src/components';
 
 
 const meta: Meta<typeof Table> = {
