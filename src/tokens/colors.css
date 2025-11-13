@@ -49,12 +49,19 @@
   --ds-color-global-highlight-900: #3399d1;
   --ds-color-global-highlight-1000: #8bc2e2;
 
+  --ds-color-global-success: #22c55e;
+
   /* Tier 2 */
   /* Brand Colors */
   --ds-color-concept-primary: var(--ds-color-global-primary-500);
   --ds-color-concept-secondary: var(--ds-color-global-accent-500);
   --ds-color-concept-neutral: var(--ds-color-global-neutral-500);
   --ds-color-concept-highlight: var(--ds-color-global-highlight-500);
+
   --ds-color-concept-blank: var(--ds-color-global-neutral-1000);
+  --ds-color-concept-filled: var(--ds-color-global-neutral-100);
+  --ds-color-concept-outline: var(--ds-color-global-neutral-200);
+
+  --ds-color-concept-success: var(--ds-color-global-success);
 }
 
