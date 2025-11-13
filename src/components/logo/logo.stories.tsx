@@ -66,3 +66,19 @@ export const CustomSize: Story = {
   ),
 }
 
+/**
+ * Logo with blank variant uses the blank color token.
+ * Use cases:
+ * - Light backgrounds
+ * - Header components with gradient backgrounds
+ * - High contrast contexts
+ */
+export const BlankVariant: Story = {
+  render: () => (
+    <div style={{ display: 'flex', gap: '16px', alignItems: 'center', background: 'var(--ds-color-concept-primary)', padding: '16px', borderRadius: '8px' }}>
+      <Logo variant="default" />
+      <Logo variant="blank" />
+    </div>
+  ),
+}
+

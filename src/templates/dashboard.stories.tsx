@@ -1,11 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Header, Layout } from '@/components';
+import { Header, Layout, Logo, Avatar } from '@/components';
+import { Menubar, MenubarMenu, MenubarTrigger, MenubarContent, MenubarItem } from '@/components';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components';
 import { Badge } from '@/components';
 // @ts-ignore - JSON import from data directory
 import pagesData from '../../data/list-of-pages.data.json';
+// @ts-ignore - JSON import from data directory
+import menubarData from '../../data/menubar.data.json';
 
 interface Page {
   id: number;
@@ -15,6 +18,17 @@ interface Page {
   target: number;
   limit: number;
   reviewer: string | null;
+}
+
+interface MenuItem {
+  id: number;
+  label: string;
+}
+
+interface Menu {
+  id: number;
+  label: string;
+  items: MenuItem[];
 }
 
 const meta: Meta = {
@@ -40,7 +54,24 @@ const Template = () => {
 
   return (
     <>
-      <Header>Header content</Header>
+      <Header
+        left={<Logo variant="blank" />}
+        middle={
+          <Menubar>
+            {(menubarData.menus as Menu[]).map((menu) => (
+              <MenubarMenu key={menu.id}>
+                <MenubarTrigger>{menu.label}</MenubarTrigger>
+                <MenubarContent>
+                  {menu.items.map((item) => (
+                    <MenubarItem key={item.id}>{item.label}</MenubarItem>
+                  ))}
+                </MenubarContent>
+              </MenubarMenu>
+            ))}
+          </Menubar>
+        }
+        right={<Avatar src="https://i.pravatar.cc/150" alt="User Avatar" size="small" />}
+      />
       <Layout>
         <Tabs defaultValue="pages">
           <TabsList>

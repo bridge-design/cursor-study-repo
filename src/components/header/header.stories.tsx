@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Header } from '@/components';
+import { Header, Logo } from '@/components';
 
 const meta: Meta<typeof Header> = {
   title: 'Components/Header',
@@ -14,11 +14,12 @@ const meta: Meta<typeof Header> = {
 export default meta;
 type Story = StoryObj<typeof Header>;
 
-
 export const Default: Story = {
   render: () => (
-    <Header>
-        Header content
-    </Header>
+    <Header
+      left={<Logo variant="blank" />}
+      middle="Header Title"
+      right="User Menu"
+    />
   ),
 };
