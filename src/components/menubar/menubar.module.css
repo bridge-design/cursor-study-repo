@@ -1,0 +1,90 @@
+:root {
+    --ds-menubar-background: var(--ds-color-concept-blank);
+    --ds-menubar-item-background-hover: var(--ds-color-concept-blank);
+    --ds-menubar-item-label-color: var(--ds-color-concept-outline);
+    --ds-menubar-label-color: var(--ds-color-concept-outline);
+    --ds-menubar-border-color: var(--ds-color-concept-outline-light);
+    
+    --ds-menubar-label-fontSize: var(--ds-typography-label-fontSize);
+    --ds-menubar-label-lineHeight: var(--ds-typography-label-lineHeight);
+    --ds-menubar-label-fontWeight: var(--ds-typography-label-fontWeight);
+}
+
+.menubar {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-padding-s);
+  padding: var(--ds-space-padding-s);
+  background-color: var(--ds-menubar-background);
+  border: 1px solid var(--ds-menubar-border-color);
+  border-radius: var(--ds-radii-concept-m);
+}
+
+.menubarMenu {
+  position: relative;
+}
+
+.menubarTrigger {
+  display: flex;
+  align-items: center;
+  padding: var(--ds-space-padding-s) var(--ds-space-padding-m);
+  border-radius: var(--ds-radii-concept-m);
+  font-size: var(--ds-menubar-label-fontSize);
+  font-weight: var(--ds-menubar-label-fontWeight);
+  line-height: var(--ds-menubar-label-lineHeight);
+  color: var(--ds-menubar-item-label-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.menubarTrigger:hover {
+  background-color: var(--ds-menubar-item-background-hover);
+}
+
+.menubarTrigger[data-highlighted] {
+  background-color: var(--ds-menubar-item-background-hover);
+}
+
+.menubarContent {
+  min-width: 200px;
+  padding: var(--ds-space-padding-s);
+  background-color: var(--ds-menubar-background);
+  border: 1px solid var(--ds-menubar-border-color);
+  border-radius: var(--ds-radii-concept-m);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menubarItem {
+  display: flex;
+  align-items: center;
+  padding: var(--ds-space-padding-s) var(--ds-space-padding-m);
+  border-radius: var(--ds-radii-concept-m);
+  font-size: var(--ds-menubar-label-fontSize);
+  font-weight: var(--ds-menubar-label-fontWeight);
+  line-height: var(--ds-menubar-label-lineHeight);
+  color: var(--ds-menubar-item-label-color);
+  cursor: pointer;
+  outline: none;
+}
+
+.menubarItem:hover,
+.menubarItem[data-highlighted] {
+  background-color: var(--ds-menubar-item-background-hover);
+}
+
+.menubarLabel {
+  padding: var(--ds-space-padding-s) var(--ds-space-padding-m);
+  font-size: var(--ds-menubar-label-fontSize);
+  font-weight: var(--ds-typography-global-fontWeight-bold);
+  line-height: var(--ds-menubar-label-lineHeight);
+  color: var(--ds-menubar-label-color);
+}
+
+.menubarGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-space-padding-s);
+}
+
