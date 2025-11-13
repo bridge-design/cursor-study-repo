@@ -1,6 +1,5 @@
 import React from "react";
 import cm from "./button.module.css";
-import "../../tokens";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;

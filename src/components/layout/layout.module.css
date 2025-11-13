@@ -1,8 +1,7 @@
-:root {
-  --layout-max-width: 960px;
-}
-
 .layoutRoot {
+
+  --layout-max-width: 960px;
+
   width: min(100%, var(--layout-max-width));
   margin: 0 auto;
   padding: var(--ds-space-concept-l, 24px) var(--ds-space-concept-m, 16px);

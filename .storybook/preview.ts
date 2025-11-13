@@ -2,6 +2,8 @@ import type { Preview } from '@storybook/react-vite'
 import { DocsPage } from './components/docs-page/docs-page'
 import { argTypesEnhancer } from './utils/propTypesCategorizer'
 
+import '@/src/tokens/index.css';
+
 const preview: Preview = {
   parameters: {
     controls: {

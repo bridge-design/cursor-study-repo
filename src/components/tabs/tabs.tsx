@@ -1,7 +1,6 @@
 import React from "react";
 import { Tabs as TabsPrimitive } from "radix-ui";
 import cm from "./tabs.module.css";
-import "../../tokens";
 
 export interface TabsProps extends TabsPrimitive.TabsProps {
   /** Optional className for adding custom CSS classes to the Tabs element */

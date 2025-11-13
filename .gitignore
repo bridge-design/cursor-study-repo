@@ -58,3 +58,8 @@ dist/
 node_modules/
 *storybook.log
 **/storybook-static
+
+# Next.js
+.next/
+out/
+next-env.d.ts

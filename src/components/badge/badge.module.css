@@ -1,15 +1,14 @@
-:root {
-    --ds-badge-background: var(--ds-color-concept-blank);
-    --ds-badge-border-color: var(--ds-color-concept-neutral);
-    --ds-badge-label-color: var(--ds-color-concept-outline);
-    --ds-badge-done-icon-color: var(--ds-color-concept-success);
-
-    --ds-badge-label-fontSize: var(--ds-typography-label-fontSize);
-    --ds-badge-label-lineHeight: var(--ds-typography-label-lineHeight);
-    --ds-badge-label-fontWeight: var(--ds-typography-label-fontWeight);
-}
-
 .badge {
+  
+  --ds-badge-background: var(--ds-color-concept-blank);
+  --ds-badge-border-color: var(--ds-color-concept-neutral);
+  --ds-badge-label-color: var(--ds-color-concept-outline);
+  --ds-badge-done-icon-color: var(--ds-color-concept-success);
+
+  --ds-badge-label-fontSize: var(--ds-typography-label-fontSize);
+  --ds-badge-label-lineHeight: var(--ds-typography-label-lineHeight);
+  --ds-badge-label-fontWeight: var(--ds-typography-label-fontWeight);
+
   display: inline-flex;
   align-items: center;
   justify-content: center;

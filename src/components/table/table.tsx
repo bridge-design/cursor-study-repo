@@ -1,6 +1,5 @@
 import React from "react";
 import cm from "./table.module.css";
-import "../../tokens";
 
 export interface TableProps extends React.TableHTMLAttributes<HTMLTableElement> {
   /** Optional className for adding custom CSS classes to the Table element */

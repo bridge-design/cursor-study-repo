@@ -1,16 +1,15 @@
-:root {
-    --ds-menubar-background: var(--ds-color-concept-blank);
-    --ds-menubar-item-background-hover: var(--ds-color-concept-blank);
-    --ds-menubar-item-label-color: var(--ds-color-concept-outline);
-    --ds-menubar-label-color: var(--ds-color-concept-outline);
-    --ds-menubar-border-color: var(--ds-color-concept-outline-light);
-    
-    --ds-menubar-label-fontSize: var(--ds-typography-label-fontSize);
-    --ds-menubar-label-lineHeight: var(--ds-typography-label-lineHeight);
-    --ds-menubar-label-fontWeight: var(--ds-typography-label-fontWeight);
-}
-
 .menubar {
+
+  --ds-menubar-background: var(--ds-color-concept-blank);
+  --ds-menubar-item-background-hover: var(--ds-color-concept-blank);
+  --ds-menubar-item-label-color: var(--ds-color-concept-outline);
+  --ds-menubar-label-color: var(--ds-color-concept-outline);
+  --ds-menubar-border-color: var(--ds-color-concept-outline-light);
+  
+  --ds-menubar-label-fontSize: var(--ds-typography-label-fontSize);
+  --ds-menubar-label-lineHeight: var(--ds-typography-label-lineHeight);
+  --ds-menubar-label-fontWeight: var(--ds-typography-label-fontWeight);
+  
   display: flex;
   align-items: center;
   gap: var(--ds-space-padding-s);

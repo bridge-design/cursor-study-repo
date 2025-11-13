@@ -1,15 +1,14 @@
-:root {
-    --ds-table-border-color: var(--ds-color-concept-outline-light);
-    --ds-table-header-background: var(--ds-color-concept-blank);
-    --ds-table-header-label-color: var(--ds-color-concept-outline);
-    --ds-table-cell-label-color: var(--ds-color-concept-outline);
-    
-    --ds-table-label-fontSize: var(--ds-typography-label-fontSize);
-    --ds-table-label-lineHeight: var(--ds-typography-label-lineHeight);
-    --ds-table-label-fontWeight: var(--ds-typography-label-fontWeight);
-}
-
 .table {
+
+  --ds-table-border-color: var(--ds-color-concept-outline-light);
+  --ds-table-header-background: var(--ds-color-concept-blank);
+  --ds-table-header-label-color: var(--ds-color-concept-outline);
+  --ds-table-cell-label-color: var(--ds-color-concept-outline);
+  
+  --ds-table-label-fontSize: var(--ds-typography-label-fontSize);
+  --ds-table-label-lineHeight: var(--ds-typography-label-lineHeight);
+  --ds-table-label-fontWeight: var(--ds-typography-label-fontWeight);
+  
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;

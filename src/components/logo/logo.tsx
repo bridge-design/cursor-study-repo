@@ -1,6 +1,5 @@
 import React from "react";
 import cm from "./logo.module.css";
-import "../../tokens";
 
 import PearIcon from "./pear.svg?react";
 

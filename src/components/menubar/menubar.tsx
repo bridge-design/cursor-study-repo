@@ -1,7 +1,6 @@
 import React from "react";
 import { Menubar as MenubarPrimitive } from "radix-ui";
 import cm from "./menubar.module.css";
-import "../../tokens";
 
 export interface MenubarProps extends MenubarPrimitive.MenubarProps {
   /** Optional className for adding custom CSS classes to the Menubar element */
@@ -64,7 +63,7 @@ export const Menubar = ({ className, children, ...props }: MenubarProps) => (
 Menubar.displayName = 'Menubar';
 
 export const MenubarMenu = ({ className, children, ...props }: MenubarMenuProps) => (
-  <MenubarPrimitive.Menu className={composeClassName(cm.menubarMenu, className)} {...props}>
+  <MenubarPrimitive.Menu {...props}>
     {children}
   </MenubarPrimitive.Menu>
 );

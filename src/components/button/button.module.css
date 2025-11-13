@@ -1,4 +1,5 @@
-:root {
+.button {
+
   /* Tier 3 */
   --ds-button-background: var(--ds-color-concept-primary);
   --ds-button-background-hover: var(--ds-color-concept-primary);
@@ -10,9 +11,7 @@
   --ds-button-label-fontSize: var(--ds-typography-label-fontSize);
   --ds-button-label-lineHeight: var(--ds-typography-label-lineHeight);
   --ds-button-label-fontWeight: var(--ds-typography-label-fontWeight);
-}
-
-.button {
+  
   display: inline-flex;
   align-items: center;
   justify-content: center;

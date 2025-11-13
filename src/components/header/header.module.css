@@ -1,4 +1,5 @@
-:root {
+.headerRoot {
+
   --ds-header-padding-block: var(--ds-space-padding-s);
   --ds-header-gap: var(--ds-space-padding-s);
 
@@ -8,9 +9,7 @@
     var(--ds-color-concept-primary),
     var(--ds-color-concept-highlight)
   );
-}
-
-.headerRoot {
+  
   width: 100%;
   background: var(--ds-header-background);
   color: var(--ds-header-text-color);

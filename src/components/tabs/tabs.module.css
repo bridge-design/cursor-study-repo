@@ -1,19 +1,18 @@
-:root {
-    --ds-tabs-background: var(--ds-color-concept-blank);
-    --ds-tabs-trigger-background: transparent;
-    --ds-tabs-trigger-background-active: var(--ds-color-concept-blank);
-    --ds-tabs-trigger-background-hover: var(--ds-color-concept-blank);
-    --ds-tabs-trigger-label-color: var(--ds-color-concept-outline);
-    --ds-tabs-trigger-label-color-active: var(--ds-color-concept-outline);
-    --ds-tabs-content-label-color: var(--ds-color-concept-outline);
-    --ds-tabs-border-color: var(--ds-color-concept-outline-light);
-    
-    --ds-tabs-label-fontSize: var(--ds-typography-label-fontSize);
-    --ds-tabs-label-lineHeight: var(--ds-typography-label-lineHeight);
-    --ds-tabs-label-fontWeight: var(--ds-typography-label-fontWeight);
-}
-
 .tabs {
+
+  --ds-tabs-background: var(--ds-color-concept-blank);
+  --ds-tabs-trigger-background: transparent;
+  --ds-tabs-trigger-background-active: var(--ds-color-concept-blank);
+  --ds-tabs-trigger-background-hover: var(--ds-color-concept-blank);
+  --ds-tabs-trigger-label-color: var(--ds-color-concept-outline);
+  --ds-tabs-trigger-label-color-active: var(--ds-color-concept-outline);
+  --ds-tabs-content-label-color: var(--ds-color-concept-outline);
+  --ds-tabs-border-color: var(--ds-color-concept-outline-light);
+  
+  --ds-tabs-label-fontSize: var(--ds-typography-label-fontSize);
+  --ds-tabs-label-lineHeight: var(--ds-typography-label-lineHeight);
+  --ds-tabs-label-fontWeight: var(--ds-typography-label-fontWeight);
+  
   width: 100%;
 }
 

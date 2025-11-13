@@ -1,9 +1,8 @@
-:root {
-    --ds-logo-color: var(--ds-color-concept-primary);
-    --ds-logo-color-blank: var(--ds-color-concept-blank);
-}
-
 .logo {
+
+  --ds-logo-color: var(--ds-color-concept-primary);
+  --ds-logo-color-blank: var(--ds-color-concept-blank);
+  
   display: inline-flex;
   align-items: center;
   justify-content: center;

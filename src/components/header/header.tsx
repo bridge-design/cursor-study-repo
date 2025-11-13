@@ -1,5 +1,4 @@
 import React from "react";
-import "../../tokens";
 import { Layout } from "../layout";
 import cm from "./header.module.css";
 
