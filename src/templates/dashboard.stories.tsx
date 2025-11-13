@@ -3,7 +3,7 @@ import React from 'react';
 import { Header, Layout } from '@/components';
 
 const meta: Meta = {
-  title: 'Templates/Home',
+  title: 'Templates/Dashboard',
   parameters: {
     layout: 'fullscreen',
   },
