@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import svgr from "vite-plugin-svgr";
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
@@ -15,9 +16,13 @@ export default defineConfig({
       "@": resolve(__dirname, "./src")
     }
   },
-  plugins: [react(), dts({
-    rollupTypes: false
-  })],
+  plugins: [
+    react(),
+    svgr(),
+    dts({
+      rollupTypes: false
+    })
+  ],
   build: {
     lib: {
       entry: resolve("./src", "index.ts"),

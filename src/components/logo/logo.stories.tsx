@@ -1,0 +1,68 @@
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { createCodeDemo, CodeDemoStoryParams } from '@/utils/code-demo'
+
+import { PropsCategory } from '../../../.storybook/constants'
+
+import { Logo } from '@/components';
+
+
+const meta: Meta<typeof Logo> = {
+  title: 'Components/Logo',
+  component: Logo,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ["autodocs"],
+};
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+const defaultArgs = {};
+
+export const Controls: Story = {
+  args: defaultArgs,
+}
+
+export const CodeDemo: Story = {
+  ...CodeDemoStoryParams,
+  args: defaultArgs,
+}
+createCodeDemo({
+  story: CodeDemo,
+  componentName: meta?.component?.displayName,
+  props: defaultArgs,
+})
+
+/**
+ * Default logo size displays the brand logo at standard size.
+ * Use cases:
+ * - Navigation bars
+ * - Headers
+ * - Brand identity
+ * - Application branding
+ */
+export const Default: Story = {
+  args: defaultArgs,
+}
+
+/**
+ * Logo with custom size.
+ * Use cases:
+ * - Different layout contexts
+ * - Responsive designs
+ * - Footer logos
+ * - Mobile navigation
+ */
+export const CustomSize: Story = {
+  render: () => (
+    <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+      <Logo width={24} height={24} />
+      <Logo width={32} height={32} />
+      <Logo width={48} height={48} />
+      <Logo width={64} height={64} />
+    </div>
+  ),
+}
+
