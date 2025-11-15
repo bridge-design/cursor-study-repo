@@ -21,9 +21,8 @@
     "build": "tsc && vite build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "next:dev": "next dev",
-    "next:build": "next build",
-    "next:start": "next start"
+    "product": "next dev",
+    "build-product": "next build"
   },
   "author": "",
   "license": "ISC",
