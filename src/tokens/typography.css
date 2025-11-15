@@ -1,5 +1,8 @@
 :root {
   /* Tier 1 */
+  /* Font Family */
+  --ds-typography-global-fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  
   /* Font Sizes */
   --ds-typography-global-fontSize-small: 0.75rem;   /* 12px */
   --ds-typography-global-fontSize-base: 1rem;        /* 16px */
