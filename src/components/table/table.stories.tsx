@@ -27,26 +27,28 @@ const defaultTableData = {
 };
 
 export const Controls: Story = {
-  render: () => (
-    <Table>
-      <TableHeader>
-        <TableRow>
-          {defaultTableData.headers.map((header, index) => (
-            <TableHead key={index}>{header}</TableHead>
-          ))}
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {defaultTableData.rows.map((row, rowIndex) => (
-          <TableRow key={rowIndex}>
-            {row.map((cell, cellIndex) => (
-              <TableCell key={cellIndex}>{cell}</TableCell>
+  args: {
+    children: (
+      <>
+        <TableHeader>
+          <TableRow>
+            {defaultTableData.headers.map((header, index) => (
+              <TableHead key={index}>{header}</TableHead>
             ))}
           </TableRow>
-        ))}
-      </TableBody>
-    </Table>
-  ),
+        </TableHeader>
+        <TableBody>
+          {defaultTableData.rows.map((row, rowIndex) => (
+            <TableRow key={rowIndex}>
+              {row.map((cell, cellIndex) => (
+                <TableCell key={cellIndex}>{cell}</TableCell>
+              ))}
+            </TableRow>
+          ))}
+        </TableBody>
+      </>
+    ),
+  },
 }
 
 /**

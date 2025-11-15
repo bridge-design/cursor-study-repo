@@ -21,13 +21,16 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Controls: Story = {
-  render: () => (
-    <Menubar>
-      <MenubarItem>New</MenubarItem>
-      <MenubarItem active>Open</MenubarItem>
-      <MenubarItem>Save</MenubarItem>
-    </Menubar>
-  ),
+  args: {
+    variant: 'default',
+    children: (
+      <>
+        <MenubarItem>New</MenubarItem>
+        <MenubarItem active>Open</MenubarItem>
+        <MenubarItem>Save</MenubarItem>
+      </>
+    ),
+  },
 }
 
 /**

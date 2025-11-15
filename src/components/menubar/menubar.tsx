@@ -6,7 +6,10 @@ export interface MenubarProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   /** Menubar content */
   children: React.ReactNode;
-  /** Variant of the menubar. 'transparent' has no border, transparent background, and inherits font color */
+  /**
+   * Variant of the menubar
+   * @default 'default'
+   */
   variant?: 'default' | 'transparent';
 }
 
