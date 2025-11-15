@@ -5,7 +5,6 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/src/components';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/src/components';
 import { Badge } from '@/src/components';
 import pagesData from '@/data/list-of-pages.data.json';
-import menubarData from '@/data/menubar.data.json';
 
 interface Page {
   id: number;
@@ -15,17 +14,6 @@ interface Page {
   target: number;
   limit: number;
   reviewer: string | null;
-}
-
-interface MenuItem {
-  id: number;
-  label: string;
-}
-
-interface Menu {
-  id: number;
-  label: string;
-  items: MenuItem[];
 }
 
 export default function Home() {
@@ -44,12 +32,11 @@ export default function Home() {
       <Header
         left={<Logo variant="blank" />}
         middle={
-          <Menubar>
-            {(menubarData.menus as Menu[]).flatMap((menu) =>
-              menu.items.map((item) => (
-                <MenubarItem key={`${menu.id}-${item.id}`}>{item.label}</MenubarItem>
-              ))
-            )}
+          <Menubar variant="transparent">
+            <MenubarItem>Products</MenubarItem>
+            <MenubarItem active>Solutions</MenubarItem>
+            <MenubarItem>Resources</MenubarItem>
+            <MenubarItem>Company</MenubarItem>
           </Menubar>
         }
         right={<Avatar src="https://i.pravatar.cc/150" alt="User Avatar" size="small" />}
