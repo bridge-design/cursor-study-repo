@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
-
 import { PropsCategory } from '@/.storybook/constants'
 
 import { 
@@ -31,22 +29,6 @@ export const Controls: Story = {
     </Menubar>
   ),
 }
-
-export const CodeDemo: Story = {
-  ...CodeDemoStoryParams,
-  render: () => (
-    <Menubar>
-      <MenubarItem>New</MenubarItem>
-      <MenubarItem>Open</MenubarItem>
-      <MenubarItem>Save</MenubarItem>
-    </Menubar>
-  ),
-}
-createCodeDemo({
-  story: CodeDemo,
-  componentName: meta?.component?.displayName,
-  props: {},
-})
 
 /**
  * Basic menubar with items.

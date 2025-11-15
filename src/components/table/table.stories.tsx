@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
-
 import { PropsCategory } from '@/.storybook/constants'
 
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/src/components';
@@ -50,35 +48,6 @@ export const Controls: Story = {
     </Table>
   ),
 }
-
-export const CodeDemo: Story = {
-  ...CodeDemoStoryParams,
-  render: () => (
-    <Table>
-      <TableHeader>
-        <TableRow>
-          {defaultTableData.headers.map((header, index) => (
-            <TableHead key={index}>{header}</TableHead>
-          ))}
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {defaultTableData.rows.map((row, rowIndex) => (
-          <TableRow key={rowIndex}>
-            {row.map((cell, cellIndex) => (
-              <TableCell key={cellIndex}>{cell}</TableCell>
-            ))}
-          </TableRow>
-        ))}
-      </TableBody>
-    </Table>
-  ),
-}
-createCodeDemo({
-  story: CodeDemo,
-  componentName: meta?.component?.displayName,
-  props: {},
-})
 
 /**
  * Basic table with header and body sections.

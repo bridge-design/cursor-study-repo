@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
-
 import { PropsCategory } from '@/.storybook/constants'
 
 import { Logo } from '@/src/components';
@@ -24,16 +22,6 @@ const defaultArgs = {};
 export const Controls: Story = {
   args: defaultArgs,
 }
-
-export const CodeDemo: Story = {
-  ...CodeDemoStoryParams,
-  args: defaultArgs,
-}
-createCodeDemo({
-  story: CodeDemo,
-  componentName: meta?.component?.displayName,
-  props: defaultArgs,
-})
 
 /**
  * Default logo size displays the brand logo at standard size.

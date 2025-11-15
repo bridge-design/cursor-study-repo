@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
-
 import { PropsCategory } from '@/.storybook/constants'
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/src/components';
@@ -33,27 +31,6 @@ export const Controls: Story = {
     </Tabs>
   ),
 }
-
-export const CodeDemo: Story = {
-  ...CodeDemoStoryParams,
-  render: () => (
-    <Tabs defaultValue="tab1">
-      <TabsList>
-        <TabsTrigger value="tab1">Tab 1</TabsTrigger>
-        <TabsTrigger value="tab2">Tab 2</TabsTrigger>
-        <TabsTrigger value="tab3">Tab 3</TabsTrigger>
-      </TabsList>
-      <TabsContent value="tab1">Content for Tab 1</TabsContent>
-      <TabsContent value="tab2">Content for Tab 2</TabsContent>
-      <TabsContent value="tab3">Content for Tab 3</TabsContent>
-    </Tabs>
-  ),
-}
-createCodeDemo({
-  story: CodeDemo,
-  componentName: meta?.component?.displayName,
-  props: {},
-})
 
 /**
  * Basic tabs with multiple tab panels.

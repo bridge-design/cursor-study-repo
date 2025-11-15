@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
-
 import { PropsCategory } from '@/.storybook/constants'
 
 import { Badge } from '@/src/components';
@@ -34,16 +32,6 @@ const defaultArgs = {
 export const Controls: Story = {
   args: defaultArgs,
 }
-
-export const CodeDemo: Story = {
-  ...CodeDemoStoryParams,
-  args: defaultArgs,
-}
-createCodeDemo({
-  story: CodeDemo,
-  componentName: meta?.component?.displayName,
-  props: defaultArgs,
-})
 
 /**
  * Planned status badge indicates items that are scheduled or queued.

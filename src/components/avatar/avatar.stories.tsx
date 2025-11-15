@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from 'storybook/test';
 
-import { createCodeDemo, CodeDemoStoryParams } from '@/src/utils/code-demo'
-
 import { PropsCategory } from '@/.storybook/constants'
 
 import { Avatar } from '@/src/components';
@@ -35,16 +33,6 @@ const defaultArgs = {
 export const Controls: Story = {
   args: defaultArgs,
 }
-
-export const CodeDemo: Story = {
-  ...CodeDemoStoryParams,
-  args: defaultArgs,
-}
-createCodeDemo({
-  story: CodeDemo,
-  componentName: meta?.component?.displayName,
-  props: defaultArgs,
-})
 
 /**
  * Small avatar size is ideal for compact UI elements where space is limited.

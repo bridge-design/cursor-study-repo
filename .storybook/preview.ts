@@ -22,12 +22,8 @@ const preview: Preview = {
 
     options: {
       storySort: {
-        order: ['Tokens', 'Components', '*'],
+        order: ['Tokens', 'Components', 'Patterns', 'Templates', '*'],
       }
-    },
-
-    liveCodeEditor: {
-      disable: true,
     },
 
     docs: {
@@ -38,17 +34,3 @@ const preview: Preview = {
 };
 
 export default preview;
-
-// <ComponentLinks />
-// <Subtitle />
-// <SectionHeading>Overview</SectionHeading>
-// <ComponentDescription />
-// <ComponentImport />
-// <StyledStoryToolbar>
-//   <Primary />
-// </StyledStoryToolbar>
-// <SectionHeading>Props</SectionHeading>
-// <StyledArgTypes />
-// <ComponentArgs />
-// <SectionHeading>Variants</SectionHeading>
-// <ComponentStories />

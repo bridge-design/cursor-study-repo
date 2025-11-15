@@ -1,5 +1,4 @@
 import type { StorybookConfig } from '@storybook/react-vite';
-import { getCodeEditorStaticDirs } from 'storybook-addon-code-editor/getStaticDirs';
 
 const config: StorybookConfig = {
   "stories": [
@@ -17,6 +16,5 @@ const config: StorybookConfig = {
     "name": "@storybook/react-vite",
     "options": {}
   },
-  staticDirs: [...getCodeEditorStaticDirs(__filename)]
 };
 export default config;

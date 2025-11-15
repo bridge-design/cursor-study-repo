@@ -24,58 +24,8 @@
       background-size: contain;
     }
   
-    .sidebar-item a[href$='--code-demo']::before {
-      background-image: url('data:image/svg+xml;utf8,<svg width="14" height="14" viewBox="0 0 14 14" fill="rgb(168, 85, 247)" xmlns="http://www.w3.org/2000/svg"><path d="M7.536 5.314a.5.5 0 01.928.372l-2 5a.5.5 0 01-.928-.371l2-5zM3.646 6.146a.5.5 0 01.708.708L3.207 8l1.147 1.146a.5.5 0 01-.708.708l-1.5-1.5a.5.5 0 01-.063-.63l.063-.078 1.5-1.5zM9.646 6.146a.5.5 0 01.707 0l1.5 1.5.065.079a.497.497 0 01-.064.629l-1.5 1.5a.5.5 0 01-.708-.708L10.793 8 9.646 6.854a.5.5 0 010-.708z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 1.004a.5.5 0 01.5.5v11l-.01.1a.501.501 0 01-.39.39l-.1.01H.5l-.1-.01a.501.501 0 01-.39-.39l-.01-.1v-11a.5.5 0 01.5-.5h13zm-12.5 11h12v-8H1v8zm.5-10a.5.5 0 100 1 .5.5 0 000-1zm2 0a.5.5 0 100 1 .5.5 0 000-1zm2 0a.5.5 0 100 1 .5.5 0 000-1z"></path></svg>');
-    }
-  
     .sidebar-item a[href$='--controls']::before {
       background-image: url('data:image/svg+xml;utf8,<svg width="14" height="14" viewBox="0 0 14 14" fill="rgb(34, 197, 94)" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1a.5.5 0 01.5.5V2h1.5a.5.5 0 010 1H11v.5a.5.5 0 01-1 0V3H1.5a.5.5 0 010-1H10v-.5a.5.5 0 01.5-.5zM1.5 11a.5.5 0 000 1H10v.5a.5.5 0 001 0V12h1.5a.5.5 0 000-1H11v-.5a.5.5 0 00-1 0v.5H1.5zM1 7a.5.5 0 01.5-.5H3V6a.5.5 0 011 0v.5h8.5a.5.5 0 010 1H4V8a.5.5 0 01-1 0v-.5H1.5A.5.5 0 011 7z"></path></svg>');
     }
 
-    /* Hide visual tests button only on Code Demo stories */
-    body:has(#storybook-explorer-tree[data-highlighted-item-id$="--code-demo"]) button[id*="tabbutton-chromaui-addon-visual-tests-panel"],
-    body:has(#storybook-explorer-tree[data-highlighted-item-id$="--code-demo"]) button[id*="tabbutton-storybook-interactions-panel"] {
-      display: none !important;
-    }
 </style>
-
-<script>
-  // Auto-focus live code editor button on Code Demo stories
-  function focusLiveCodeEditorOnCodeDemo() {
-    const explorerTree = document.getElementById('storybook-explorer-tree');
-    const liveCodeButton = document.getElementById('tabbutton-livecodeeditorpanel');
-    
-    if (explorerTree && liveCodeButton) {
-      const highlightedItemId = explorerTree.getAttribute('data-highlighted-item-id');
-      
-      if (highlightedItemId && highlightedItemId.endsWith('--code-demo')) {
-        // Trigger click event to focus/activate the live code editor tab
-        liveCodeButton.click();
-      }
-    }
-  }
-
-  // Watch for changes in the explorer tree
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.type === 'attributes' && 
-          mutation.attributeName === 'data-highlighted-item-id') {
-        focusLiveCodeEditorOnCodeDemo();
-      }
-    });
-  });
-
-  // Start observing when DOM is ready
-  document.addEventListener('DOMContentLoaded', () => {
-    const explorerTree = document.getElementById('storybook-explorer-tree');
-    if (explorerTree) {
-      observer.observe(explorerTree, {
-        attributes: true,
-        attributeFilter: ['data-highlighted-item-id']
-      });
-      
-      // Also check on initial load
-      focusLiveCodeEditorOnCodeDemo();
-    }
-  });
-</script>
