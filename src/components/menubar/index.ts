@@ -1,10 +1,5 @@
 export { 
   Menubar, 
-  MenubarMenu, 
-  MenubarTrigger, 
-  MenubarContent, 
-  MenubarItem, 
-  MenubarLabel, 
-  MenubarGroup 
+  MenubarItem
 } from './menubar';
 

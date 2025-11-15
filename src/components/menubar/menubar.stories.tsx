@@ -6,12 +6,7 @@ import { PropsCategory } from '@/.storybook/constants'
 
 import { 
   Menubar, 
-  MenubarMenu, 
-  MenubarTrigger, 
-  MenubarContent, 
-  MenubarItem, 
-  MenubarLabel, 
-  MenubarGroup 
+  MenubarItem
 } from '@/src/components';
 
 
@@ -30,14 +25,9 @@ type Story = StoryObj<typeof meta>;
 export const Controls: Story = {
   render: () => (
     <Menubar>
-      <MenubarMenu>
-        <MenubarTrigger>File</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>New</MenubarItem>
-          <MenubarItem>Open</MenubarItem>
-          <MenubarItem>Save</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
+      <MenubarItem>New</MenubarItem>
+      <MenubarItem active>Open</MenubarItem>
+      <MenubarItem>Save</MenubarItem>
     </Menubar>
   ),
 }
@@ -46,14 +36,9 @@ export const CodeDemo: Story = {
   ...CodeDemoStoryParams,
   render: () => (
     <Menubar>
-      <MenubarMenu>
-        <MenubarTrigger>File</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>New</MenubarItem>
-          <MenubarItem>Open</MenubarItem>
-          <MenubarItem>Save</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
+      <MenubarItem>New</MenubarItem>
+      <MenubarItem>Open</MenubarItem>
+      <MenubarItem>Save</MenubarItem>
     </Menubar>
   ),
 }
@@ -64,7 +49,7 @@ createCodeDemo({
 })
 
 /**
- * Basic menubar with a single menu.
+ * Basic menubar with items.
  * Use cases:
  * - Application navigation
  * - Menu systems
@@ -73,87 +58,47 @@ createCodeDemo({
 export const Default: Story = {
   render: () => (
     <Menubar>
-      <MenubarMenu>
-        <MenubarTrigger>File</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>New</MenubarItem>
-          <MenubarItem>Open</MenubarItem>
-          <MenubarItem>Save</MenubarItem>
-          <MenubarItem>Save As...</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
+      <MenubarItem>File</MenubarItem>
+      <MenubarItem active>Edit</MenubarItem>
+      <MenubarItem>View</MenubarItem>
+      <MenubarItem>Help</MenubarItem>
     </Menubar>
   ),
 }
 
-/**
- * Menubar with multiple menus.
- * Use cases:
- * - Application menu bars
- * - Complex navigation systems
- * - Multi-level menu structures
- */
-export const MultipleMenus: Story = {
-  render: () => (
-    <Menubar>
-      <MenubarMenu>
-        <MenubarTrigger>File</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>New</MenubarItem>
-          <MenubarItem>Open</MenubarItem>
-          <MenubarItem>Save</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>Edit</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>Undo</MenubarItem>
-          <MenubarItem>Redo</MenubarItem>
-          <MenubarItem>Cut</MenubarItem>
-          <MenubarItem>Copy</MenubarItem>
-          <MenubarItem>Paste</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>View</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>Zoom In</MenubarItem>
-          <MenubarItem>Zoom Out</MenubarItem>
-          <MenubarItem>Reset Zoom</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-    </Menubar>
-  ),
-}
 
 /**
- * Menubar with grouped items and labels.
+ * Transparent menubar variant with no border and transparent background.
+ * Font color is inherited from parent component.
  * Use cases:
- * - Organized menu structures
- * - Categorized menu items
- * - Sectioned menus
+ * - Overlay navigation
+ * - Dark themed interfaces
+ * - Hero sections with navigation
  */
-export const WithGroups: Story = {
+export const Transparent: Story = {
   render: () => (
-    <Menubar>
-      <MenubarMenu>
-        <MenubarTrigger>Options</MenubarTrigger>
-        <MenubarContent>
-          <MenubarGroup>
-            <MenubarLabel>File Operations</MenubarLabel>
-            <MenubarItem>New File</MenubarItem>
-            <MenubarItem>Open File</MenubarItem>
-            <MenubarItem>Save File</MenubarItem>
-          </MenubarGroup>
-          <MenubarGroup>
-            <MenubarLabel>Edit Operations</MenubarLabel>
-            <MenubarItem>Undo</MenubarItem>
-            <MenubarItem>Redo</MenubarItem>
-            <MenubarItem>Find</MenubarItem>
-          </MenubarGroup>
-        </MenubarContent>
-      </MenubarMenu>
-    </Menubar>
+    <div
+      style={{
+        backgroundColor: 'var(--ds-color-global-neutral-100)',
+        color: '#ffffff',
+        padding: '2rem',
+        borderRadius: 'var(--ds-radii-sconcept-m)',
+      }}
+    >
+      <Menubar variant="transparent">
+        <MenubarItem>File</MenubarItem>
+        <MenubarItem active>Edit</MenubarItem>
+        <MenubarItem>View</MenubarItem>
+        <MenubarItem>Help</MenubarItem>
+      </Menubar>
+      <p style={{ marginTop: '1rem', color: '#ffffff' }}>
+        This is text in the container. The menubar inherits the white color from its parent.{' '}
+        <a href="#" style={{ color: '#ffffff', textDecoration: 'underline' }}>
+          This is a link
+        </a>
+        {' '}with white color.
+      </p>
+    </div>
   ),
 }
 

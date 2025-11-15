@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Layout, Logo, Avatar } from '@/src/components';
-import { Menubar, MenubarMenu, MenubarTrigger, MenubarContent, MenubarItem } from '@/src/components';
+import { Menubar, MenubarItem } from '@/src/components';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/src/components';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/src/components';
 import { Badge } from '@/src/components';
@@ -45,16 +45,11 @@ export default function Home() {
         left={<Logo variant="blank" />}
         middle={
           <Menubar>
-            {(menubarData.menus as Menu[]).map((menu) => (
-              <MenubarMenu key={menu.id}>
-                <MenubarTrigger>{menu.label}</MenubarTrigger>
-                <MenubarContent>
-                  {menu.items.map((item) => (
-                    <MenubarItem key={item.id}>{item.label}</MenubarItem>
-                  ))}
-                </MenubarContent>
-              </MenubarMenu>
-            ))}
+            {(menubarData.menus as Menu[]).flatMap((menu) =>
+              menu.items.map((item) => (
+                <MenubarItem key={`${menu.id}-${item.id}`}>{item.label}</MenubarItem>
+              ))
+            )}
           </Menubar>
         }
         right={<Avatar src="https://i.pravatar.cc/150" alt="User Avatar" size="small" />}

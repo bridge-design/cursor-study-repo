@@ -2,83 +2,19 @@
   "menus": [
     {
       "id": 1,
-      "label": "Products",
-      "items": [
-        {
-          "id": 1,
-          "label": "Overview"
-        },
-        {
-          "id": 2,
-          "label": "Features"
-        },
-        {
-          "id": 3,
-          "label": "Pricing"
-        },
-        {
-          "id": 4,
-          "label": "Integrations"
-        }
-      ]
+      "label": "Products"
     },
     {
       "id": 2,
-      "label": "Solutions",
-      "items": [
-        {
-          "id": 1,
-          "label": "For Teams"
-        },
-        {
-          "id": 2,
-          "label": "For Enterprise"
-        },
-        {
-          "id": 3,
-          "label": "Use Cases"
-        }
-      ]
+      "label": "Solutions"
     },
     {
       "id": 3,
-      "label": "Resources",
-      "items": [
-        {
-          "id": 1,
-          "label": "Documentation"
-        },
-        {
-          "id": 2,
-          "label": "Blog"
-        },
-        {
-          "id": 3,
-          "label": "Support"
-        },
-        {
-          "id": 4,
-          "label": "Community"
-        }
-      ]
+      "label": "Resources"
     },
     {
       "id": 4,
-      "label": "Company",
-      "items": [
-        {
-          "id": 1,
-          "label": "About"
-        },
-        {
-          "id": 2,
-          "label": "Careers"
-        },
-        {
-          "id": 3,
-          "label": "Contact"
-        }
-      ]
+      "label": "Company"
     }
   ]
 }
