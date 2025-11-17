@@ -63,10 +63,9 @@ export const CustomSize: Story = {
  */
 export const BlankVariant: Story = {
   render: () => (
-    <div style={{ display: 'flex', gap: '16px', alignItems: 'center', background: 'var(--ds-color-concept-primary)', padding: '16px', borderRadius: '8px' }}>
+    <div style={{ display: 'flex', gap: '16px', alignItems: 'center', background: 'var(--ds-color-semantic-background-accent)', padding: '16px', borderRadius: '8px' }}>
       <Logo variant="default" />
       <Logo variant="blank" />
     </div>
   ),
 }
-

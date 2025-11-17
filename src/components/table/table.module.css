@@ -1,9 +1,9 @@
 .table {
 
-  --ds-table-border-color: var(--ds-color-concept-outline-light);
-  --ds-table-header-background: var(--ds-color-concept-blank);
-  --ds-table-header-label-color: var(--ds-color-concept-outline);
-  --ds-table-cell-label-color: var(--ds-color-concept-outline);
+  --ds-table-border-color: var(--ds-color-global-neutral-800);
+  --ds-table-header-background: var(--ds-color-semantic-background-primary);
+  --ds-table-header-label-color: var(--ds-color-semantic-foreground-secondary);
+  --ds-table-cell-label-color: var(--ds-color-semantic-foreground-secondary);
   
   --ds-table-label-fontSize: var(--ds-typography-label-fontSize);
   --ds-table-label-lineHeight: var(--ds-typography-label-lineHeight);
@@ -45,4 +45,3 @@
   line-height: var(--ds-table-label-lineHeight);
   color: var(--ds-table-cell-label-color);
 }
-

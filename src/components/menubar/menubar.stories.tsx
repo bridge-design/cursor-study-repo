@@ -64,10 +64,10 @@ export const Transparent: Story = {
   render: () => (
     <div
       style={{
-        backgroundColor: 'var(--ds-color-global-neutral-100)',
+        backgroundColor: 'var(--ds-color-global-neutral-950)',
         color: '#ffffff',
         padding: '2rem',
-        borderRadius: 'var(--ds-radii-sconcept-m)',
+        borderRadius: 'var(--ds-radii-concept-m)',
       }}
     >
       <Menubar variant="transparent">
@@ -86,4 +86,3 @@ export const Transparent: Story = {
     </div>
   ),
 }
-

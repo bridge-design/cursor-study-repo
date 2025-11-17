@@ -1,7 +1,7 @@
 .logo {
 
-  --ds-logo-color: var(--ds-color-concept-primary);
-  --ds-logo-color-blank: var(--ds-color-concept-blank);
+  --ds-logo-color: var(--ds-color-semantic-background-accent);
+  --ds-logo-color-blank: var(--ds-color-semantic-foreground-primary-inverted);
   
   display: inline-flex;
   align-items: center;
@@ -19,4 +19,3 @@
 .logoBlank .logoIcon {
   fill: var(--ds-logo-color-blank);
 }
-

@@ -3,11 +3,11 @@
   --ds-header-padding-block: var(--ds-space-padding-s);
   --ds-header-gap: var(--ds-space-padding-s);
 
-  --ds-header-text-color: var(--ds-color-concept-blank);
+  --ds-header-text-color: var(--ds-color-semantic-foreground-primary-inverted);
   --ds-header-background: linear-gradient(
     135deg,
-    var(--ds-color-concept-primary),
-    var(--ds-color-concept-highlight)
+    var(--ds-color-semantic-background-accent),
+    var(--ds-color-global-information-500)
   );
   
   width: 100%;

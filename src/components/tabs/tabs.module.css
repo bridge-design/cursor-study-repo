@@ -1,13 +1,13 @@
 .tabs {
 
-  --ds-tabs-background: var(--ds-color-concept-blank);
+  --ds-tabs-background: var(--ds-color-semantic-background-primary);
   --ds-tabs-trigger-background: transparent;
-  --ds-tabs-trigger-background-active: var(--ds-color-concept-blank);
-  --ds-tabs-trigger-background-hover: var(--ds-color-concept-blank);
-  --ds-tabs-trigger-label-color: var(--ds-color-concept-outline);
-  --ds-tabs-trigger-label-color-active: var(--ds-color-concept-outline);
-  --ds-tabs-content-label-color: var(--ds-color-concept-outline);
-  --ds-tabs-border-color: var(--ds-color-concept-outline-light);
+  --ds-tabs-trigger-background-active: var(--ds-color-semantic-background-primary);
+  --ds-tabs-trigger-background-hover: var(--ds-color-semantic-background-primary);
+  --ds-tabs-trigger-label-color: var(--ds-color-semantic-foreground-secondary);
+  --ds-tabs-trigger-label-color-active: var(--ds-color-semantic-foreground-secondary);
+  --ds-tabs-content-label-color: var(--ds-color-semantic-foreground-secondary);
+  --ds-tabs-border-color: var(--ds-color-global-neutral-800);
   
   --ds-tabs-label-fontSize: var(--ds-typography-label-fontSize);
   --ds-tabs-label-lineHeight: var(--ds-typography-label-lineHeight);
@@ -47,7 +47,7 @@
 .tabsTrigger[data-state="active"] {
   color: var(--ds-tabs-trigger-label-color-active);
   background-color: var(--ds-tabs-trigger-background-active);
-  border-bottom-color: var(--ds-color-concept-primary);
+  border-bottom-color: var(--ds-color-semantic-background-accent);
 }
 
 .tabsContent {
@@ -71,4 +71,3 @@
     opacity: 1;
   }
 }
-
